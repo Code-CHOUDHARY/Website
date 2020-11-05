@@ -1,175 +1,145 @@
-<!DOCTYPE html>
 <html>
-	<head>
-           <meta charset="UTF-8">
-           <title>Contact Page</title>	
-           <style>
-           *{
-              margin: 0;
-              padding: 0;
-              box-sizing: border-box;
-              font-family: 'Josefin Sans', sans-serif;
-              }   
-           body{
-              height: 100vh;
-              display: -webkit-box;
-              display: -msflex-box;
-              display: flex;
-              -webkit-box-pack: center;
-               -ms-flex-pack: center;
-               justify-content: center;
-               align-items: center;
-               perspective: 1000px;
-               transform-style: preserve-3d;
-               position: rleative;
-               font-family:arial;   
-			   background-size: cover;
-              }
-            .container{
-               min-width: 700px;
-               min-height: 350px;
-               border-radius: 20px;
-               position: rleative;
-               transition: 1.5s ease-in-out;
-               transform-style: preserve-3d;
-                }
+<head>
+<title>contact us</title>
+<style>
+body{
+	background-image:url("bg4.jpg");
+	image-opacity: 0.5;
+	background-size: cover;
+	background-repeat: repeat;
+	background-position: center;
+	height: 100vh;
+	}
+	.clearfix:after{
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0px;
+	clear: both;
+}
 
-            .side{
-               position: absolute;
-               text-align: center;
-               width: 100%;
-               height: 100%;
-               padding: 50px 50px;
-               color: white;
-               transform-style: preserve-3d;
-               backface-visibility: hidden;
-               border-radius: 20px;
-               }
-           .content{
-               transform: translatez(70px)
-               scale(0.8);
-               line-height: 1.5em;
-              }
-           .content h1{
-               position: rleative;
-			   margin-top: 2%;
-               font-size: 20px;
-               font-family: arial;
-               }
+.row1 {  
+  display: flex;
+  padding:100px;
+   
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 60%;
   
-           .content h1: before{
-                content: "";
-                position: absolute;
-                bottom: -20px;
-                height: 30px;
-                background-clip;
-                backgroung-color: white;
-                width: 70px;
-                left: 50%;                  
-                transform:translateX(-50%);
-			   }
-h2 {
-        width: 100%;
-        font-size: 30px;
-        margin: 125px auto;
-        text-align: center;
-        color: #fff;
-        text-shadow: 0px 1px 1px #ddd,
-                     0px 2px 1px #d6d6d6,
-                     0px 3px 1px #ccc,
-                     0px 4px 1px #c5c5c5,
-                     0px 5px 1px #c1c1c1,
-                     0px 6px 1px #bbb,
-                     0px 7px 1px #777,
-                     0px 8px 3px rgba(100, 100, 100, 0.4),
-                     0px 9px 5px rgba(100, 100, 100, 0.1),
-                     0px 10px 7px rgba(100, 100, 100, 0.15),
-                     0px 11px 9px rgba(100, 100, 100, 0.2),
-                     0px 12px 11px rgba(100, 100, 100, 0.25),
-                     0px 13px 15px rgba(100, 100, 100, 0.3);
-     transition:all .8s ease-in-out;  
-      -o-transition:all .8s ease-in-out;  
-      -moz-transition:all .8s ease-in-out;  
-      -webkit-transition:all .8s ease-in-out;
-    }
- 
-           .front{
-                z-index: 2;
-                background-image: url("imgf.jpg")
-                background-size: cover;
-                background-size: 100vh;
-                color: white;
-                }
-            .back{
-                background-color: #333;
-                transform: rotateY(180deg);
-                z-index: 0;
-                padding-top: 10px; 
-                background-color: aquamarine;
-                background-size: cover;
-                }
-             
-             .container:hover{
-                 
-                   transform: rotateY(180deg);
-                }  
-                                                          
-             .back h1{
-                   margin: 0;
-				 font-family: unlock;
-                 }
-      
-             form label, form input{
-                   display: block;
-                 }
-         
-              form input, form textarea{
-                    background: transparent;
-                    border: 0;
-                    border-bottom: 2px solid white;
-                    padding: 5px;
-                    width: 100%;
-                    color: white;
-                    outline: none;
-                   }
-              form label{
-                    margin: 15px 0;
-                   }
-			   .button{
-		            display: block; 
-                    width: auto;
-                    padding: 5px 10px;
-                    border: 3px solid white;
-                    border-radius: 4px;
-                    color: white;
-                    cursor: pointer;
-			   }
-			   
-		</style>
-	</head>
-	<body background="background.jpg">
-             <div class ="container">
-                   <div class="front side">
-                        <div class="content">
+}
 
-                           <h2><b>Mouse Over It To Submit Contact Details</b></h2>
- 	    				</div>
-                   </div>
-					    <div class="back side">
-	   				   		 <div class=" CONTENT">
-                            	 <h1> Contact Details</h1>
-                            	 <form>
-                            		<label>Name :    </label>
-                            	 	<input type="text" placeholder="username">
-	         					 	<label>E-mail :</label>
-                            	 	<input type="text" placeholder="Example@gmail.com">
-                            	 	<label>Message :</label>
-                            	 	<textarea placeholder="The Subject">
-                            	 	</textarea>
-									<button><a href="index.html">Submit</a></button> 
-                             	</form> 
-                     		</div>
-                  		</div>  
-              </div>
-	</body>
+
+.main {   
+  flex: 40%;
+ padding:25px;
+ 
+}
+.row{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+.logo{
+	height: 120px;
+	width: auto;
+	float: left;
+	margin-top: 20px;
+}
+.topnav{
+	float: right;
+	margin-top: 60px;
+}
+
+.topnav li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 40px;
+}
+.topnav li a{
+	padding: 5px 0;
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 100%;
+	font-weight: 100;
+}
+.topnav li a:hover{
+	border-bottom: 2px solid black;
+	color: black;
+	font-size: 22px;
+}
+ .form {
+padding: ;
+font-size: 100px;}
+
+.footer{
+	padding: 40px;
+	background-color:eeeeee;
+	color: white;
+	text-align: center;
+	height: 30px;
+	width: 100%;
+	opacity:0.7;
+}
+.p {font-family: Comic Sans MS;
+font-size: 18px;
+}
+
+.s {font-family: Comic Sans MS;
+
+  font-size: 25px;
+
+}
+</style>
+</head>
+<body>
+<nav>
+<div class="row clearfix">
+				<img src="2.jpg" class="logo">
+					<ul class="topnav">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+				<li><a href="gallery1.html">PORTFOLIO</a></li>
+				<li><a href="services1.html">SERVICES</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+				</div>
+		</nav>
+		
+		<h1><center>Contact Us</center></h1>
+<div class="p"><center>We'll be glad to hear from you.</center>
+<center>If there’s anything you’d like to ask us,</center><center> we’re here and ready to help in every way we can.</p></center>
+</div>
+<div class="row1">
+<form>
+<div class="side"><label for="fname">NAME:</label><br>
+  <input type="text" id="fname" name="fname" placeholder="first name" style="height: 40px;" size="40">  <br><br>
+  <label for="phno">PHONE NUMBER:</label><br>
+  <input type="text" id="phno" name="phno" placeholder="phone number" style="height: 40px;" size="40"><br><br>
+   <label for="email">EMAIL:</label><br>
+  <input type="text" id="email" name="email" placeholder="email-id" style="height: 40px;" size="40"><br><br>
+   <label for="subject">MESSAGE:</label><br>
+  <input type="text" id="subject" name="subject" placeholder="message" style="height: 40px;" size="40"><br><br>  
+  <input type="button" value="Send Message" style="height: 50px; width: 100px;" >
+</form>
+<br>
+</div>
+<div class="main">
+<div class="s"><u>NOTE:</u> <br>As a small creative studio we do not hire often,<br> but we are always on the lookout for talented artist to join us.
+<br>Email us your portfolio to asia@rise.com or fill the form above.<br> Please fill it with the following info. "Job Application:Your name" as the title.
+</p>
+</div>
+</div></div>
+<br>
+<div class="footer" align="center">
+<a href="https://www.facebook.com"><img src="logo6.jpeg" height="30" width="30"></a>
+  <a href="https://www.instagram.com"><img src="logo2.jpeg" height="30" width="30"></a>
+  <a href="https://www.twitter.com"><img src="logo4.jpeg" height="30" width="30"></a>
+  <p style="color:#ba7967"><b>Web design by WD05B4</b></p> 
+  </div>
+
+</footer>
+
+</body>
 </html>
